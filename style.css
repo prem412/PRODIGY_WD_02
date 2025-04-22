@@ -12,9 +12,11 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     text-align: center;
     width: 400px;
+    min-height: 400px;
+    overflow: hidden;
 }
 
 h1 {
@@ -31,6 +33,10 @@ h1 {
 
 .controls {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 button {
@@ -75,7 +81,7 @@ button {
 
 .laps {
     margin-top: 20px;
-    max-height: 200px;
+    max-height: 150px;
     overflow-y: auto;
 }
 
@@ -86,6 +92,7 @@ button {
 
 #laplist {
     list-style-type: none;
+    max-height: fit-content;
     padding: 0;
 }
 
@@ -97,4 +104,14 @@ button {
 
 #laplist li:last-child(odd) {
     background-color: #f9f9f9;
+}
+
+#lapReset {
+    background-color: #000000;
+    margin: 20px 0 0 0;
+    justify-self: center;
+
+    &:hover {
+    color: #ff0000;
+    }
 }

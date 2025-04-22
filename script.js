@@ -1,4 +1,4 @@
-let startTime = 0;
+let startTime;
 let endTime = 0;
 let timerInterval;
 let isRunning = false;
@@ -9,6 +9,16 @@ const pauseBtn = document.getElementById('pauseBtn');
 const Resetbtn = document.getElementById('Resetbtn');
 const lap = document.getElementById('lap');
 const laplist = document.getElementById('laplist');
+const lapResetBtn = document.querySelector('.lapReset');
+var lapReset = document.getElementById('lapReset');
+
+function showResetBtn() {
+    if (laplist.childElementCount >> 0)  {
+        lapReset.style.display = 'block';
+    } else {
+        lapReset.style.display = 'none';
+    }
+}
 
 function formatTime(time) {
     let hours = Math.floor(time / 3600000);
@@ -18,7 +28,7 @@ function formatTime(time) {
     return (
         String(hours).padStart(2, '0') + ':' + 
         String(minutes).padStart(2, '0') + ':' + 
-        String(seconds).padStart(2, '0') + ':' + 
+        String(seconds).padStart(2, '0') + '.' + 
         String(milliseconds).padStart(2, '0')
     );
 }
@@ -30,7 +40,7 @@ function updateDisplay() {
 function startTimer() {
     if (!isRunning) {
         startTime = Date.now() - endTime;
-        timerInterval = setInterval(() => {
+        timerInterval = setInterval(function() {
             endTime = Date.now() - startTime;
             updateDisplay();
         }, 10);
@@ -60,9 +70,18 @@ function recordLap() {
     }
 }
 
+function resetLaps() {
+    laplist.innerHTML = '';
+    showResetBtn();
+    lapReset.style.display = 'none';
+}
+
+
 startBtn.addEventListener('click', startTimer);
 pauseBtn.addEventListener('click', pauseTimer);
 Resetbtn.addEventListener('click', resetTimer);
-lapBtn.addEventListener('click', recordLap);
+lap.addEventListener('click', recordLap);
+lapReset.addEventListener('click', resetLaps);
+
 
 updateDisplay(); 
