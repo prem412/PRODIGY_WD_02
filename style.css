@@ -4,13 +4,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f9e1e1;
+    background-color: #00d6aa;
     margin: 0;
 }
 
 .stopWach-box {
-    background-color: #ffffff;
-    border-radius: 10px;
+    background-color: #faf3dd;
+    border-radius: 20px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
     padding: 40px 40px 20px 40px;
     text-align: center;
@@ -41,8 +41,8 @@ h1 {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #b8f2e6;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -53,19 +53,19 @@ button {
 }
 
 #startBtn:hover {
-    background-color: #45a049;
+    background-color: #96ecdb;
 }
 
 #pauseBtn {
-    background-color: #f39c12;
+    background-color: #ffa69e;
 
     &:hover {
-        background-color: #e67e22;
+        background-color: #e6978f;
     }
 } 
 
 #Resetbtn {
-    background-color: #ff0000;
+    background-color: #9a9a9a;
 
     &:hover {
         background-color: #db0505;
@@ -73,10 +73,10 @@ button {
 }
 
 #lap {
-    background-color: #3498db;
+    background-color: #aed9e0;
 
     &:hover {
-        background-color: #2980b9;
+        background-color: #9ec5cb;
     }
 }
 
@@ -111,6 +111,7 @@ button {
     background-color: #000000;
     margin: 20px 0 0 0;
     justify-self: center;
+    color: #ffffff;
 
     &:hover {
     color: #ff0000;
