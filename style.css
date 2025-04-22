@@ -20,5 +20,27 @@ body {
 h1 {
     color: #333333;
     margin-top: 0;
-    
+}
+
+.display {
+    font-size: 3rem;
+    color: #333333;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
