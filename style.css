@@ -88,3 +88,13 @@ button {
     list-style-type: none;
     padding: 0;
 }
+
+#laplist li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#laplist li:last-child(odd) {
+    background-color: #f9f9f9;
+}
