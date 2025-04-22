@@ -37,6 +37,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    max-width: 100%;
 }
 
 button {
@@ -64,10 +65,10 @@ button {
 } 
 
 #Resetbtn {
-    background-color: #e74c3c;
+    background-color: #ff0000;
 
     &:hover {
-        background-color: #c0392b;
+        background-color: #db0505;
     }
 }
 
