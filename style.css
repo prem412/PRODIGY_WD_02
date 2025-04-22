@@ -44,3 +44,32 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+#startBtn:hover {
+    background-color: #45a049;
+}
+
+#pauseBtn {
+    background-color: #f39c12;
+
+    &:hover {
+        background-color: #e67e22;
+    }
+} 
+
+#Resetbtn {
+    background-color: #e74c3c;
+
+    &:hover {
+        background-color: #c0392b;
+    }
+}
+
+#lap {
+    background-color: #3498db;
+
+    &:hover {
+        background-color: #2980b9;
+    }
+}
+
