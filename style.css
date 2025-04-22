@@ -73,3 +73,18 @@ button {
     }
 }
 
+.laps {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+#laplist {
+    list-style-type: none;
+    padding: 0;
+}
