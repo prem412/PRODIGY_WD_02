@@ -1,6 +1,9 @@
 You can see here ! https://prem412.github.io/PRODIGY_WD_02/
-https://github.com/user-attachments/assets/f5bfb157-7da7-4539-9914-3ce1cb6ee648
+https://github.com/user-attachments/assets/501bc941-626f-45fb-ba2b-668a5cd9804d
 To build a stopwatch web application, you can use HTML, CSS, and JavaScript. HTML is used to structure the elements of the application. By implementing functions for starting, pausing, and resetting the stopwatch, as well as tracking and displaying lap times, users can accurately measure and record time intervals. With these technologies and functionalities, you can create an interactive and user-friendly stopwatch web application.
+
+
+
 
 
 
