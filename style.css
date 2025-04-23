@@ -10,7 +10,7 @@ body {
 
 .stopWach-box {
     background-color: #faf3dd;
-    border-radius: 20px;
+    border-radius: 100px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
     padding: 40px 40px 20px 40px;
     text-align: center;
@@ -44,9 +44,10 @@ button {
     background-color: #b8f2e6;
     color: #000000;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 12px;
+    max-width: 90px;
     margin: 0 5px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -82,7 +83,7 @@ button {
 
 .laps {
     margin-top: 20px;
-    max-height: 150px;
+    max-height: 140px;
     overflow-y: auto;
 }
 
@@ -112,6 +113,7 @@ button {
     margin: 20px 0 0 0;
     justify-self: center;
     color: #ffffff;
+    max-width: 130px;
 
     &:hover {
     color: #ff0000;
